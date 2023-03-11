@@ -4,11 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f989ff9-6fea-4e0c-a8b1-dd7e096777d4" name="Changes" comment="" />
+    <list default="true" id="2f989ff9-6fea-4e0c-a8b1-dd7e096777d4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/CourierClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/OrdersClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/LoginForCourier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/NewCourier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/NewOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/settings/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testdata/CourierTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testdata/LoginTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testdata/OrderTestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CreateTheNewCourierTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CreateTheOrderParameterizedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/GetTheOrderListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoginCourierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -26,9 +47,21 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/projects/Sprint7/src/test"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\Sprint7\src\test" />
+      <recent name="C:\projects\Sprint7\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\Sprint7\src\main\resources" />
+      <recent name="C:\projects\Sprint7\src\main\java\client" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,5 +72,8 @@
       <updated>1678535171854</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
