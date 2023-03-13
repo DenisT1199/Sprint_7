@@ -22,7 +22,7 @@ public class CourierClient {
     }
 
     @Step("Регистрация курьера с невалидными  данными")
-    public Response getUncorrectCourier(NewCourier newCourier) {
+    public Response getIncorrectCourier(NewCourier newCourier) {
         return given()
                 .header("Content-type", "application/json")
                 .baseUri(getBaseUri())

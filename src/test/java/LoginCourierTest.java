@@ -15,18 +15,19 @@ import static testdata.CourierTestData.getCourierRequestAllRequiredField;
 import static testdata.LoginTestData.invalidLoginPassword;
 import static testdata.LoginTestData.requestWithoutRequiredField;
 
+
 public class LoginCourierTest {
     public static final String COURIER_LOGIN = "courier/login";
     private static final String COURIER = "courier";
 
     @AfterClass
     public static void setId() {
-        LoginForCourier loginForCourier = LoginTestData.correctLogin(CourierTestData.getCourierRequestAllRequiredField());
+        //LoginForCourier loginForCourier = LoginTestData.correctLogin(CourierTestData.getCourierRequestAllRequiredField());
 
         int id = given()
                 .header("Content-type", "application/json")
                 .baseUri(getBaseUri())
-                .body(loginForCourier)
+                .body(getCourierRequestAllRequiredField())
                 .post("courier/login")
                 .then()
                 .assertThat()
@@ -54,12 +55,12 @@ public class LoginCourierTest {
                 .body(newCourier)
                 .post(COURIER);
 
-        LoginForCourier loginForCourier = LoginTestData.correctLogin(CourierTestData.getCourierRequestAllRequiredField());
+        //LoginForCourier loginForCourier = LoginTestData.correctLogin(CourierTestData.getCourierRequestAllRequiredField());
 
         Response response = given()
                 .header("Content-type", "application/json")
                 .baseUri(getBaseUri())
-                .body(loginForCourier)
+                .body(getCourierRequestAllRequiredField())
                 .post(COURIER_LOGIN);
         response.then()
                 .statusCode(200)

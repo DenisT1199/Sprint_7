@@ -8,6 +8,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import testdata.CourierTestData;
+import static org.apache.http.HttpStatus.*;
 
 import static org.hamcrest.Matchers.equalTo;
 
@@ -30,7 +31,7 @@ public class CreateTheNewCourierTest {
     @Description("Позитивный сценарий создания курьера. Ожидание: возвращается код ответа 201 и ok: true")
     public void createNewCorrectCourier() {
     courierClient.getCorrectNewCourier(CourierTestData.getCourierRequestAllRequiredField())
-        .then().statusCode(201)
+        .then().statusCode(SC_CREATED)
             .and()
             .assertThat().body("ok", equalTo(true));
     }
@@ -50,7 +51,7 @@ public class CreateTheNewCourierTest {
     @DisplayName("Невалидные данные для создания курьера")
     @Description("Создание курьера без одного обязательного поля. Ожидаемый результат: код ответа 400 и сообщение об ошибке \"Недостаточно данных для создания учетной записи\"")
     public void createCourierWithoutRequiredField(){
-        courierClient.getUncorrectCourier(CourierTestData.getCourierRequestWithoutRequiredField())
+        courierClient.getIncorrectCourier(CourierTestData.getCourierRequestWithoutRequiredField())
                 .then().statusCode(400)
                 .and()
                 .assertThat().body("message", equalTo(EXPECTED_MESSAGE_400));
